@@ -1,0 +1,122 @@
+.footer {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-xl);
+}
+
+.newsletter h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group label {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-gray-300);
+  font-family: var(--font-secondary);
+  width: 100%;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  text-transform: lowercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-column a {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  transition: var(--transition-fast);
+}
+
+.footer-column a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  margin-top: var(--spacing-xxl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo .pixel-text {
+  font-size: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .footer-links {
+    order: 1;
+  }
+  
+  .newsletter {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .newsletter {
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    margin-top: var(--spacing-xl);
+  }
+}
