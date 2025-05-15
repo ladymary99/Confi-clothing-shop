@@ -1,6 +1,7 @@
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+and a little with three.js and blender 3d 
 
 Currently, two official plugins are available:
 
